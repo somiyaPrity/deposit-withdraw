@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposite</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-16"> Let's get some
+            <Span class="font-semibold text-purple-600">
+                Mooney
+            </Span>!!! </h1>
+    </header>
+
+    <main>
+        <section>
+            <div class="grid grid-cols-3 gap-4 w-3/4 mt-8 mx-auto">
+                <div class="bg-blue-400 p-8 rounded">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h4 class="text-2xl ">$<span class="depo-money">00</span></h4>
+                </div>
+
+                <div class="bg-green-300 p-8 rounded">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <h4 class="text-2xl">$<span class="withdraw-money">00</span></h4>
+                </div>
+
+                <div class="bg-yellow-300 p-8 rounded">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h4 class="text-2xl">$<span class="balance">00</span></h4>
+                </div>
+            </div>
+        </section>
+        <section class="mx-auto">
+            <div class="grid grid-cols-2 gap-4 w-3/4 mt-8 mx-auto">
+                <div>
+                    <h1 class="text-2xl">deposit</h1>
+                    <input type="text" class="border block border-gray-400 rounded w-3/4 mb-4 px-2" name=""
+                        id="deposit">
+                    <button class="bg-yellow-600 px-4 rounded text-white font medium py-2"
+                        id="depo-submit">Submit</button>
+                </div>
+                <div>
+                    <h1 class="text-2xl">withdraw</h1>
+                    <input type="text" class="border block border-gray-400 rounded w-3/4 mb-4 px-2" name=""
+                        id="withdraw">
+                    <button class="bg-yellow-600 px-4 rounded text-white font medium py-2" id="w-submit">Submit</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="deposit.js"></script>
+</body>
+
+</html>
